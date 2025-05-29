@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #222;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #42b3a9;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.search-filter {
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+}
+
+.search-filter input {
+  padding: 10px;
+  width: 250px;
+  max-width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-filter button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background: #42b3a9;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.filters {
+  margin-top: 15px;
+}
+
+.filters .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.action { background-color: red; }
+.comedy { background-color: yellow; color: black; }
+.romance { background-color: skyblue; }
+.horror { background-color: green; }
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.movie-card {
+  background: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid lime;
+  transition: transform 0.3s ease;
+  
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  
+}
+
+.movie-card a {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  color: pointer;
+}
+
+
+
+
+footer {
+    background-color: #41b3ac;
+    color: white;
+    padding: 2rem 1rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .footer-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
